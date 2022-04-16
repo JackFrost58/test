@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./assets/icon/favicon.ico" type="image/x-icon">
+    <title>Mood</title>
+</head>
+<body>
+    <section class="card-container">
+        <section class="card-container__card card-container__card--front wrapper wrapper_blue">
+            <main class="main signup-main">
+                <aside class="logo-container">
+                    <img src="./assets/icon/header/logo.svg" alt="logo" class="logo-container__logo">
+                    <p class="logo-container__text">ood</p>
+                </aside>
+                <article class="signup-container">
+                    <div class="link-wrapper">
+                        <button class="link-container__link-home">Home</button>
+                    </div>
+                    <div class="title-container">
+                        <div class="title-container__logo">
+                            <img src="./assets/icon/header/logo.svg" alt="logo">
+                        </div>
+                        <p class="title-container__title">Welcome to Mood</p>
+                        <p class="title-container__text">Create your account in order to share with everyone your mood and news events</p>
+                    </div>
+                    <form action="" class="form-container form-container__signUp">
+                        <input type="text" id="user" placeholder="Create Username" autocomplete="off" class="form-container__input">
+                        <div class="form-container__error">
+                            <p class="form-container__error-username">Username must be no more 5 - 20 characters in length</p>
+                        </div>
+                        <input type="password" id="password" placeholder="Create Password" autocomplete="new-password" class="form-container__input">
+                        <div class="form-container__error">
+                            <p class="form-container__error-password">Your password must be at least 5 characters longer, <br> and include at least one lowercase letter and a number</p>
+                        </div>
+                        <input type="password" id="confirm-password" placeholder="Confirm Password" autocomplete="new-password" class="form-container__input">
+                        <div class="form-container__error">
+                            <p class="form-container__error-confirm-password">Passwords do not match</p>
+                        </div>
+                        <button type="submit" class="button button__signup">Sign Up</button>
+                    </form>
+                    <button type="button" class="link-login">I have account</button>
+                </article>
+            </main>
+        </section>
+        <section class="card-container__card card-container__card--back wrapper">
+            <main class="main login-main">
+                <aside class="link-container">
+                    <button class="link-container__link-home">Home</button>
+                </aside>
+                <article class="login-container">
+                    <div class="title-container">
+                        <div class="title-container__logo title-login">
+                            <img src="./assets/icon/header/logo.svg" alt="logo" class="title-container__icon">
+                        </div>
+                        <p class="title-container__title">Welcome back to Mood</p>
+                    </div>
+                    <div class="form-container__error">
+                        <p class="form-container__error-login">Please check the spelling of <br> your login and password.</p>
+                    </div>
+                    <form action="" class="form-container form-container__logIn">
+                        <input type="text" placeholder="Login" class="form-container__input" id="login" autocomplete="off">
+                        <input type="password" placeholder="Password" class="form-container__input" id="login-password">
+                        <button type="submit" class="button button__login">Log In</button>
+                    </form>
+                    <div class="signup-link">
+                        <p class="signup-link__text">or</p>
+                        <button type="button" class="button button__signup button__signup-bottom">Sign Up</button>
+                    </div>       
+                </article>
+                <aside class="aside-container">
+                    <img src="./assets/icon/header/logo.svg" alt="logo" class="aside-container__logo">
+                    <p class="aside-container__text">ood</p>
+                </aside>
+            </main>
+            <script type="module" src="./event-signup-login.js"></script>
+        </section>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <img src="./assets/icon/header/logo.svg" alt="logo" class="footer-container__logo">
+            <span class="footer-container__text">ood</span>
+        </div>
+        <span class="footer__text">by Vladislav Zhgirov</span>
+        <span class="footer__text">15.03.2022</span>
+        <span class="footer__text">zgv2324@gmail.com</span>
+    </footer>
+</body>
+<script type="module" src="./event-signup-login.js"></script>
+<!-- <script type="module" src="./event-main-page.js"></script> -->
+</html>
